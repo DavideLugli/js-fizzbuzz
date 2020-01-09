@@ -10,14 +10,19 @@
 for (var i = 1; i <= 100; i++) {
   if (i % 3 == 0 && i % 5 == 0) {
     console.log('FizzBuzz');
+    document.getElementById('fizz_list').innerHTML += '<li>' + 'FizzBuzz' + '</li>';
   } else if (i % 3 == 0) {
     console.log('Fizz');
+    document.getElementById('fizz_list').innerHTML += '<li>' + 'Fizz' + '</li>';
   } else if (i % 5 == 0) {
     console.log('Buzz');
+    document.getElementById('fizz_list').innerHTML += '<li>' + 'Buzz' + '</li>';
   } else {
     console.log(i);
+    document.getElementById('fizz_list').innerHTML += '<li>' + i + '</li>';
   }
 }
+
 
 
 // con il while
